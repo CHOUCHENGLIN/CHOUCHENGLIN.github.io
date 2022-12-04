@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製作屬於自己的網頁</title>
+    <style>
+        body{
+            background-image: url(個人作品a.png);
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <form action="#" method="get">
+        <input type="text" name="user" placeholder="請輸入使用者帳號"><br>
+        <input type="password" name="pass" id="pass" placeholder="請輸入使用者密碼">
+        <button type="button" id="btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+        <br>
+        <label for="boy">
+            <input type="radio" name="peple" id="boy" value="男">
+            男
+        </label>
+        <label for="girl">
+            <input type="radio" name="peple" id="girl">
+            女
+        </label>
+        <br>
+        <label for="red"></label>
+        <button type="submit">送出</button><br>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum eos est commodi repellat cumque maxime atque voluptates, culpa unde error. Omnis minima sint incidunt aperiam repellat inventore animi, excepturi quos ea obcaecati sunt nobis cupiditate rerum dolor fugiat magnam tenetur sit neque est rem eos mollitia velit ex praesentium. Numquam iure aperiam dolorem adipisci illo officia odit voluptatum provident, ea porro tempora! Officia minima officiis praesentium quidem, magni doloribus libero. Aut atque dolore eligendi molestiae hic ad molestias odit vitae tempore soluta nulla ipsum, perspiciatis blanditiis dolores facilis similique nihil mollitia vero laborum quae? Pariatur iusto natus amet recusandae eos.
+    <h1>一架構</h1>
+    <a href="https://video.friday.tw/" target="_blank" rel="noopener noreferrer">影片</a>
+    a href="https://video.friday.tw/"
+    <h6></h6>
+    <h6></h6>
+
+    <p></p>
+    </form>
+    
+</body>
+</html>
+<script>
+    let btn = document.getElementById("btn");
+    let pass = document.getElementById("pass");
+    let eye = document.getElementById("eye");
+    btn.addEventListener("click",function(){
+        if(pass.getAttribute("type") == "password"){
+            pass.setAttribute("type","text");
+            eye.setAttribute("class","fa-solid fa-eye-slash")
+        }else{
+            pass.setAttribute("type","password");
+            eye.setAttribute("class","fa-solid fa-eye");
+        }
+    })
+</script>
